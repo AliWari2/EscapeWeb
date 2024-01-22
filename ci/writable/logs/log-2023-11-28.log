@@ -1,0 +1,568 @@
+CRITICAL - 2023-11-28 09:13:59 --> chmod() has been disabled for security reasons
+in SYSTEMPATH/Session/Handlers/FileHandler.php on line 147.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Session/Handlers/FileHandler.php(147): chmod()
+ 3 [internal function]: CodeIgniter\Session\Handlers\FileHandler->read()
+ 4 SYSTEMPATH/Session/Session.php(919): session_start()
+ 5 SYSTEMPATH/Session/Session.php(241): CodeIgniter\Session\Session->startSession()
+ 6 SYSTEMPATH/Config/Services.php(693): CodeIgniter\Session\Session->start()
+ 7 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::session()
+ 8 SYSTEMPATH/Config/BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic()
+ 9 SYSTEMPATH/Config/Services.php(664): CodeIgniter\Config\BaseService::getSharedInstance()
+10 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::session()
+11 SYSTEMPATH/Common.php(996): CodeIgniter\Config\BaseService::__callStatic()
+12 APPPATH/Views/compte/compte_creer.php(2): session()
+13 SYSTEMPATH/View/View.php(228): include('/home/2023DIFAL3/e22107275/public_html/V1/ci/app/Views/compte/compte_creer.php')
+14 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+15 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+16 APPPATH/Controllers/Compte.php(67): view()
+17 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Compte->creer()
+18 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+19 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+20 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 09:13:59 --> Uncaught ErrorException: chmod() has been disabled for security reasons in /home/2023DIFAL3/e22107275/public_html/V1/ci/system/Log/Handlers/FileHandler.php:119
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/2023DIFAL3/e22107275/public_html/V1/ci/system/Log/Handlers/FileHandler.php(119): chmod()
+#2 /home/2023DIFAL3/e22107275/public_html/V1/ci/system/Log/Logger.php(294): CodeIgniter\Log\Handlers\FileHandler->handle()
+#3 /home/2023DIFAL3/e22107275/public_html/V1/ci/system/Common.php(810): CodeIgniter\Log\Logger->log()
+#4 /home/2023DIFAL3/e22107275/public_html/V1/ci/system/Debug/Exceptions.php(133): log_message()
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#6 {main}
+  thrown
+【Previous Exception】
+ErrorException
+chmod() has been disabled for security reasons
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/2023DIFAL3/e22107275/public_html/V1/ci/system/Session/Handlers/FileHandler.php(147): chmod()
+#2 [internal function]: CodeIgniter\Session\Handlers\FileHandler->read()
+#3 /home/2023DIFAL3/e22107275/public_html/V1/ci/system/Session/Session.php(919): session_start()
+#4 /home/2023DIFAL3/e22107275/public_html/V1/ci/system/Session/Session.php(241): CodeIgniter\Session\Session->startSession()
+#5 /home/2023DIFAL3/e22107275/public_html/V1/ci/system/Config/Services.php(693): CodeIgniter\Session\Session->start()
+#6 /home/2023DIFAL3/e22107275/public_html/V1/ci/system/Config/BaseService.php(258): CodeIgniter\Config\Services::session()
+#7 /home/2023DIFAL3/e22107275/public_html/V1/ci/system/Config/BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic()
+#8 /home/2023DIFAL3/e22107275/public_html/V1/ci/system/Config/Services.php(664): CodeIgniter\Config\BaseService::getSharedInstance()
+#9 /home/2023DIFAL3/e22107275/public_html/V1/ci/system/Config/BaseService.php(258): CodeIgniter\Config\Services::session()
+#10 /home/2023DIFAL3/e22107275/public_html/V1/ci/system/Common.php(996): CodeIgniter\Config\BaseService::__callStatic()
+#11 /home/2023DIFAL3/e22107275/public_html/V1/ci/app/Views/compte/compte_creer.php(2): session()
+#12 /home/2023DIFAL3/e22107275/public_html/V1/ci/system/View/View.php(228): include('/home/2023DIFAL...')
+#13 /home/2023DIFAL3/e22107275/public_html/V1/ci/system/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#14 /home/2023DIFAL3/e22107275/public_html/V1/ci/system/Common.php(1190): CodeIgniter\View\View->render()
+#15 /home/2023DIFAL3/e22107275/public_html/V1/ci/app/Controllers/Compte.php(67): view()
+#16 /home/2023DIFAL3/e22107275/public_html/V1/ci/system/CodeIgniter.php(942): App\Controllers\Compte->creer()
+#17 /home/2023DIFAL3/e22107275/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#18 /home/2023DIFAL3/e22107275/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#19 /home/2023DIFAL3/e22107275/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#20 {main}
+in SYSTEMPATH/Log/Handlers/FileHandler.php on line 119.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-11-28 09:14:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-28 10:19:23 --> syntax error, unexpected '/'
+in APPPATH/Controllers/Compte.php on line 73.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 [internal function]: spl_autoload_call()
+ 5 SYSTEMPATH/CodeIgniter.php(900): class_exists()
+ 6 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 10:19:37 --> syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST)
+in APPPATH/Controllers/Compte.php on line 70.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 [internal function]: spl_autoload_call()
+ 5 SYSTEMPATH/CodeIgniter.php(900): class_exists()
+ 6 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 10:19:38 --> syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST)
+in APPPATH/Controllers/Compte.php on line 70.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 [internal function]: spl_autoload_call()
+ 5 SYSTEMPATH/CodeIgniter.php(900): class_exists()
+ 6 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 10:19:49 --> Failed to create(read) session ID: user (path: /home/2023DIFAL3/e22107275/public_html/V1/ci/writable/session)
+in SYSTEMPATH/Session/Session.php on line 400.
+ 1 SYSTEMPATH/Session/Session.php(400): session_regenerate_id()
+ 2 SYSTEMPATH/Session/Session.php(250): CodeIgniter\Session\Session->regenerate()
+ 3 SYSTEMPATH/Config/Services.php(693): CodeIgniter\Session\Session->start()
+ 4 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::session()
+ 5 SYSTEMPATH/Config/BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic()
+ 6 SYSTEMPATH/Config/Services.php(664): CodeIgniter\Config\BaseService::getSharedInstance()
+ 7 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::session()
+ 8 SYSTEMPATH/Common.php(996): CodeIgniter\Config\BaseService::__callStatic()
+ 9 APPPATH/Views/compte/compte_creer.php(2): session()
+10 SYSTEMPATH/View/View.php(228): include('/home/2023DIFAL3/e22107275/public_html/V1/ci/app/Views/compte/compte_creer.php')
+11 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+13 APPPATH/Controllers/Compte.php(67): view()
+14 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Compte->creer()
+15 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+16 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+17 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-28 10:19:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-28 10:19:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-28 10:38:42 --> syntax error, unexpected '/'
+in APPPATH/Controllers/Compte.php on line 73.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 [internal function]: spl_autoload_call()
+ 5 SYSTEMPATH/CodeIgniter.php(900): class_exists()
+ 6 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 10:38:44 --> syntax error, unexpected '/'
+in APPPATH/Controllers/Compte.php on line 73.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 [internal function]: spl_autoload_call()
+ 5 SYSTEMPATH/CodeIgniter.php(900): class_exists()
+ 6 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 10:38:45 --> syntax error, unexpected '/'
+in APPPATH/Controllers/Compte.php on line 73.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 [internal function]: spl_autoload_call()
+ 5 SYSTEMPATH/CodeIgniter.php(900): class_exists()
+ 6 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 10:38:45 --> syntax error, unexpected '/'
+in APPPATH/Controllers/Compte.php on line 73.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 [internal function]: spl_autoload_call()
+ 5 SYSTEMPATH/CodeIgniter.php(900): class_exists()
+ 6 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 10:38:45 --> syntax error, unexpected '/'
+in APPPATH/Controllers/Compte.php on line 73.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 [internal function]: spl_autoload_call()
+ 5 SYSTEMPATH/CodeIgniter.php(900): class_exists()
+ 6 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 10:38:46 --> syntax error, unexpected '/'
+in APPPATH/Controllers/Compte.php on line 73.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 [internal function]: spl_autoload_call()
+ 5 SYSTEMPATH/CodeIgniter.php(900): class_exists()
+ 6 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 10:39:33 --> Failed to create(read) session ID: user (path: /home/2023DIFAL3/e22107275/public_html/V1/ci/writable/session)
+in SYSTEMPATH/Session/Session.php on line 400.
+ 1 SYSTEMPATH/Session/Session.php(400): session_regenerate_id()
+ 2 SYSTEMPATH/Session/Session.php(250): CodeIgniter\Session\Session->regenerate()
+ 3 SYSTEMPATH/Config/Services.php(693): CodeIgniter\Session\Session->start()
+ 4 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::session()
+ 5 SYSTEMPATH/Config/BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic()
+ 6 SYSTEMPATH/Config/Services.php(664): CodeIgniter\Config\BaseService::getSharedInstance()
+ 7 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::session()
+ 8 SYSTEMPATH/Common.php(996): CodeIgniter\Config\BaseService::__callStatic()
+ 9 APPPATH/Views/connexion/compte_connecter.php(2): session()
+10 SYSTEMPATH/View/View.php(228): include('/home/2023DIFAL3/e22107275/public_html/V1/ci/app/Views/connexion/compte_connecter.php')
+11 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+13 APPPATH/Controllers/Compte.php(102): view()
+14 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Compte->connecter()
+15 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+16 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+17 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-28 10:39:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-28 10:39:36 --> Call to undefined function form_open()
+in APPPATH/Views/connexion/compte_connecter.php on line 3.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Compte.php(102): view()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Compte->connecter()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-28 10:39:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-28 10:39:37 --> Call to undefined function form_open()
+in APPPATH/Views/connexion/compte_connecter.php on line 3.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Compte.php(102): view()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Compte->connecter()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-28 10:41:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-28 10:41:43 --> Call to undefined function form_open()
+in APPPATH/Views/connexion/compte_connecter.php on line 3.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Compte.php(102): view()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Compte->connecter()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-28 10:41:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-28 10:41:44 --> Call to undefined function form_open()
+in APPPATH/Views/connexion/compte_connecter.php on line 3.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Compte.php(102): view()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Compte->connecter()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-28 10:41:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-28 10:41:44 --> Call to undefined function form_open()
+in APPPATH/Views/connexion/compte_connecter.php on line 3.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Compte.php(102): view()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Compte->connecter()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-28 10:41:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-28 10:41:44 --> Call to undefined function form_open()
+in APPPATH/Views/connexion/compte_connecter.php on line 3.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Compte.php(102): view()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Compte->connecter()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-28 10:41:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-28 10:41:45 --> Call to undefined function form_open()
+in APPPATH/Views/connexion/compte_connecter.php on line 3.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Compte.php(102): view()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Compte->connecter()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 10:45:48 --> Failed to create(read) session ID: user (path: /home/2023DIFAL3/e22107275/public_html/V1/ci/writable/session)
+in SYSTEMPATH/Session/Session.php on line 400.
+ 1 SYSTEMPATH/Session/Session.php(400): session_regenerate_id()
+ 2 SYSTEMPATH/Session/Session.php(250): CodeIgniter\Session\Session->regenerate()
+ 3 SYSTEMPATH/Config/Services.php(693): CodeIgniter\Session\Session->start()
+ 4 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::session()
+ 5 SYSTEMPATH/Config/BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic()
+ 6 SYSTEMPATH/Config/Services.php(664): CodeIgniter\Config\BaseService::getSharedInstance()
+ 7 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::session()
+ 8 SYSTEMPATH/Common.php(996): CodeIgniter\Config\BaseService::__callStatic()
+ 9 APPPATH/Views/connexion/compte_connecter.php(2): session()
+10 SYSTEMPATH/View/View.php(228): include('/home/2023DIFAL3/e22107275/public_html/V1/ci/app/Views/connexion/compte_connecter.php')
+11 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+13 APPPATH/Controllers/Compte.php(102): view()
+14 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Compte->connecter()
+15 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+16 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+17 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-28 10:45:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-28 10:45:50 --> Call to undefined function form_open()
+in APPPATH/Views/connexion/compte_connecter.php on line 3.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Compte.php(102): view()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Compte->connecter()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-28 10:45:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-28 10:45:51 --> Call to undefined function form_open()
+in APPPATH/Views/connexion/compte_connecter.php on line 3.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Compte.php(102): view()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Compte->connecter()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-28 10:46:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-28 10:46:40 --> Call to undefined function form_open()
+in APPPATH/Views/connexion/compte_connecter.php on line 3.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Compte.php(102): view()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Compte->connecter()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-28 10:46:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-28 10:46:41 --> Call to undefined function form_open()
+in APPPATH/Views/connexion/compte_connecter.php on line 3.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Compte.php(102): view()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Compte->connecter()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-28 10:46:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-28 10:46:42 --> Call to undefined function form_open()
+in APPPATH/Views/connexion/compte_connecter.php on line 3.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Compte.php(102): view()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Compte->connecter()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-28 10:46:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-28 10:46:42 --> Call to undefined function form_open()
+in APPPATH/Views/connexion/compte_connecter.php on line 3.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Compte.php(102): view()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Compte->connecter()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-28 10:48:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-28 10:48:36 --> Call to undefined function form_open()
+in APPPATH/Views/connexion/compte_connecter.php on line 3.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Compte.php(102): view()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Compte->connecter()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-28 10:48:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-28 10:48:36 --> Call to undefined function form_open()
+in APPPATH/Views/connexion/compte_connecter.php on line 3.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Compte.php(102): view()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Compte->connecter()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-28 10:48:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-28 10:48:37 --> Call to undefined function form_open()
+in APPPATH/Views/connexion/compte_connecter.php on line 3.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Compte.php(102): view()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Compte->connecter()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-28 10:48:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-28 10:48:37 --> Call to undefined function form_open()
+in APPPATH/Views/connexion/compte_connecter.php on line 3.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Compte.php(102): view()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Compte->connecter()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-28 10:48:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-28 10:48:37 --> Call to undefined function form_open()
+in APPPATH/Views/connexion/compte_connecter.php on line 3.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Compte.php(102): view()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Compte->connecter()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-28 10:49:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-28 10:49:13 --> Call to undefined function form_open()
+in APPPATH/Views/connexion/compte_connecter.php on line 3.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Compte.php(102): view()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Compte->connecter()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-28 10:49:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-28 10:49:40 --> Call to undefined function form_open()
+in APPPATH/Views/connexion/compte_connecter.php on line 3.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Compte.php(102): view()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Compte->connecter()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-28 10:50:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-28 10:50:09 --> Call to undefined function form_open()
+in APPPATH/Views/connexion/compte_connecter.php on line 3.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Compte.php(102): view()
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Compte->connecter()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-28 10:52:47 --> Failed to create(read) session ID: user (path: /home/2023DIFAL3/e22107275/public_html/V1/ci/writable/session)
+in SYSTEMPATH/Session/Session.php on line 400.
+ 1 SYSTEMPATH/Session/Session.php(400): session_regenerate_id()
+ 2 SYSTEMPATH/Session/Session.php(250): CodeIgniter\Session\Session->regenerate()
+ 3 SYSTEMPATH/Config/Services.php(693): CodeIgniter\Session\Session->start()
+ 4 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::session()
+ 5 SYSTEMPATH/Config/BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic()
+ 6 SYSTEMPATH/Config/Services.php(664): CodeIgniter\Config\BaseService::getSharedInstance()
+ 7 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::session()
+ 8 SYSTEMPATH/Common.php(996): CodeIgniter\Config\BaseService::__callStatic()
+ 9 APPPATH/Views/connexion/compte_connecter.php(2): session()
+10 SYSTEMPATH/View/View.php(228): include('/home/2023DIFAL3/e22107275/public_html/V1/ci/app/Views/connexion/compte_connecter.php')
+11 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+13 APPPATH/Controllers/Compte.php(103): view()
+14 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Compte->connecter()
+15 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+16 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+17 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-28 10:52:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-28 10:53:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-28 10:54:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-28 10:54:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-28 10:54:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-28 10:54:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-28 10:54:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-28 10:54:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-28 10:54:28 --> chmod() has been disabled for security reasons
+in SYSTEMPATH/Session/Handlers/FileHandler.php on line 147.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Session/Handlers/FileHandler.php(147): chmod()
+ 3 [internal function]: CodeIgniter\Session\Handlers\FileHandler->read()
+ 4 SYSTEMPATH/Session/Session.php(919): session_start()
+ 5 SYSTEMPATH/Session/Session.php(241): CodeIgniter\Session\Session->startSession()
+ 6 SYSTEMPATH/Config/Services.php(693): CodeIgniter\Session\Session->start()
+ 7 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::session()
+ 8 SYSTEMPATH/Config/BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic()
+ 9 SYSTEMPATH/Config/Services.php(664): CodeIgniter\Config\BaseService::getSharedInstance()
+10 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::session()
+11 SYSTEMPATH/Common.php(996): CodeIgniter\Config\BaseService::__callStatic()
+12 APPPATH/Views/compte/compte_creer.php(2): session()
+13 SYSTEMPATH/View/View.php(228): include('/home/2023DIFAL3/e22107275/public_html/V1/ci/app/Views/compte/compte_creer.php')
+14 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+15 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+16 APPPATH/Controllers/Compte.php(67): view()
+17 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Compte->creer()
+18 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+19 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+20 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-28 10:54:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-28 10:55:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-28 10:56:07 --> mysqli_sql_exception: Unknown column 'cpt_login' in 'field list' in /home/2023DIFAL3/e22107275/public_html/V1/ci/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/2023DIFAL3/e22107275/public_html/V1/ci/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /home/2023DIFAL3/e22107275/public_html/V1/ci/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/2023DIFAL3/e22107275/public_html/V1/ci/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/2023DIFAL3/e22107275/public_html/V1/ci/app/Models/Db_model.php(130): CodeIgniter\Database\BaseConnection->query()
+#4 /home/2023DIFAL3/e22107275/public_html/V1/ci/app/Controllers/Compte.php(88): App\Models\Db_model->connect_compte()
+#5 /home/2023DIFAL3/e22107275/public_html/V1/ci/system/CodeIgniter.php(942): App\Controllers\Compte->connecter()
+#6 /home/2023DIFAL3/e22107275/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22107275/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22107275/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-28 10:56:07 --> Unknown column 'cpt_login' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 APPPATH/Models/Db_model.php(130): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Controllers/Compte.php(88): App\Models\Db_model->connect_compte()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Compte->connecter()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-28 10:56:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-28 10:59:14 --> Failed to create(read) session ID: user (path: /home/2023DIFAL3/e22107275/public_html/V1/ci/writable/session)
+in SYSTEMPATH/Session/Session.php on line 400.
+ 1 SYSTEMPATH/Session/Session.php(400): session_regenerate_id()
+ 2 SYSTEMPATH/Session/Session.php(250): CodeIgniter\Session\Session->regenerate()
+ 3 SYSTEMPATH/Config/Services.php(693): CodeIgniter\Session\Session->start()
+ 4 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::session()
+ 5 SYSTEMPATH/Config/BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic()
+ 6 SYSTEMPATH/Config/Services.php(664): CodeIgniter\Config\BaseService::getSharedInstance()
+ 7 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::session()
+ 8 SYSTEMPATH/Common.php(996): CodeIgniter\Config\BaseService::__callStatic()
+ 9 APPPATH/Views/connexion/compte_connecter.php(2): session()
+10 SYSTEMPATH/View/View.php(228): include('/home/2023DIFAL3/e22107275/public_html/V1/ci/app/Views/connexion/compte_connecter.php')
+11 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+13 APPPATH/Controllers/Compte.php(98): view()
+14 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Compte->connecter()
+15 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+16 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+17 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-28 10:59:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-28 10:59:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-28 10:59:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-28 11:00:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-28 11:00:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-28 11:01:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-28 11:01:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-28 11:01:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-28 11:03:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-28 11:06:58 --> Failed to create(read) session ID: user (path: /home/2023DIFAL3/e22107275/public_html/V1/ci/writable/session)
+in SYSTEMPATH/Session/Session.php on line 400.
+ 1 SYSTEMPATH/Session/Session.php(400): session_regenerate_id()
+ 2 SYSTEMPATH/Session/Session.php(250): CodeIgniter\Session\Session->regenerate()
+ 3 SYSTEMPATH/Config/Services.php(693): CodeIgniter\Session\Session->start()
+ 4 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::session()
+ 5 SYSTEMPATH/Config/BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic()
+ 6 SYSTEMPATH/Config/Services.php(664): CodeIgniter\Config\BaseService::getSharedInstance()
+ 7 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::session()
+ 8 SYSTEMPATH/Common.php(996): CodeIgniter\Config\BaseService::__callStatic()
+ 9 APPPATH/Controllers/Compte.php(90): session()
+10 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Compte->connecter()
+11 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-28 11:08:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-28 11:08:01 --> Invalid file: "templates/haut2.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Compte.php(92): view()
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Compte->connecter()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-28 11:08:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-28 11:09:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-28 13:11:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-28 17:21:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

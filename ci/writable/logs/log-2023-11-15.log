@@ -1,0 +1,75 @@
+CRITICAL - 2023-11-15 16:41:53 --> Undefined property: stdClass::$intitule_eta
+in APPPATH/Views/affichage_etape.php on line 3.
+ 1 APPPATH/Views/affichage_etape.php(3): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/home/2023DIFAL3/e22107275/public_html/V1/ci/app/Views/affichage_etape.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Scenario.php(28): view()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->afficher_etape()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 16:41:53 --> Uncaught ErrorException: chmod() has been disabled for security reasons in /home/2023DIFAL3/e22107275/public_html/V1/ci/system/Log/Handlers/FileHandler.php:119
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/2023DIFAL3/e22107275/public_html/V1/ci/system/Log/Handlers/FileHandler.php(119): chmod()
+#2 /home/2023DIFAL3/e22107275/public_html/V1/ci/system/Log/Logger.php(294): CodeIgniter\Log\Handlers\FileHandler->handle()
+#3 /home/2023DIFAL3/e22107275/public_html/V1/ci/system/Common.php(810): CodeIgniter\Log\Logger->log()
+#4 /home/2023DIFAL3/e22107275/public_html/V1/ci/system/Debug/Exceptions.php(133): log_message()
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#6 {main}
+  thrown
+【Previous Exception】
+ErrorException
+Undefined property: stdClass::$intitule_eta
+#0 /home/2023DIFAL3/e22107275/public_html/V1/ci/app/Views/affichage_etape.php(3): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/2023DIFAL3/e22107275/public_html/V1/ci/system/View/View.php(228): include('/home/2023DIFAL...')
+#2 /home/2023DIFAL3/e22107275/public_html/V1/ci/system/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/2023DIFAL3/e22107275/public_html/V1/ci/system/Common.php(1190): CodeIgniter\View\View->render()
+#4 /home/2023DIFAL3/e22107275/public_html/V1/ci/app/Controllers/Scenario.php(28): view()
+#5 /home/2023DIFAL3/e22107275/public_html/V1/ci/system/CodeIgniter.php(942): App\Controllers\Scenario->afficher_etape()
+#6 /home/2023DIFAL3/e22107275/public_html/V1/ci/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#7 /home/2023DIFAL3/e22107275/public_html/V1/ci/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/2023DIFAL3/e22107275/public_html/V1/ci/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+in SYSTEMPATH/Log/Handlers/FileHandler.php on line 119.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-15 16:44:55 --> Undefined property: stdClass::$intitule_eta
+in APPPATH/Views/affichage_etape.php on line 3.
+ 1 APPPATH/Views/affichage_etape.php(3): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/home/2023DIFAL3/e22107275/public_html/V1/ci/app/Views/affichage_etape.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Scenario.php(28): view()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->afficher_etape()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 16:45:42 --> Undefined property: stdClass::$intitule_eta
+in APPPATH/Views/affichage_etape.php on line 3.
+ 1 APPPATH/Views/affichage_etape.php(3): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/home/2023DIFAL3/e22107275/public_html/V1/ci/app/Views/affichage_etape.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Scenario.php(28): view()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->afficher_etape()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 16:46:13 --> Undefined property: stdClass::$Intitule_eta
+in APPPATH/Views/affichage_etape.php on line 3.
+ 1 APPPATH/Views/affichage_etape.php(3): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/home/2023DIFAL3/e22107275/public_html/V1/ci/app/Views/affichage_etape.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Scenario.php(28): view()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->afficher_etape()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-15 17:11:15 --> Too few arguments to function App\Controllers\Scenario::afficher_etape(), 1 passed in /home/2023DIFAL3/e22107275/public_html/V1/ci/system/CodeIgniter.php on line 942 and exactly 2 expected
+in APPPATH/Controllers/Scenario.php on line 21.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Scenario->afficher_etape()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
